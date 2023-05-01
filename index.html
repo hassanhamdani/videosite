@@ -32,8 +32,13 @@
 			<div class="centered">
 				<div id="choices" class="choices">
 					<div style="margin-bottom: 20px;"><span>Placeholder for the text</span></div>
-					<div class="choice" style="margin-bottom: 20px;" onclick="playClip('videos/TrimmerBreakfast.mp4')">Choice 1</div>
+					<div class="choice" style="margin-bottom: 20px;" onclick="playClip('videos/TrimmerBreakfast.mp4'); document.getElementById('choices1').style.display='block'; document.getElementById('choices').style.display='none'">Choice 1</div>
 					<div class="choice" style="margin-bottom: 20px;" onclick="playClip('videos/InterviewGoodSleepEnding.mp4')">Choice 2</div>
+				</div>
+				<div id="choices1" class="choices" style="display:none;">
+					<div style="margin-bottom: 20px;"><span>Placeholder for the text</span></div>
+					<div class="choice" style="margin-bottom: 20px;" onclick="playClip('videos/TrimmerBreakfast.mp4')">Choice 3</div>
+					<div class="choice" style="margin-bottom: 20px;" onclick="playClip('videos/InterviewGoodSleepEnding.mp4')">Choice 4</div>
 				</div>
 			</div>
 		</div>
