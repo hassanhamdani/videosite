@@ -174,3 +174,39 @@ video {
 #play-pause:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
+
+#info {
+    display: none;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,0);
+    content: url("assets/responsive-3.png");
+    background: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .top {
+        filter: blur(25px);
+        filter: url("blur.svg#gaussian_blur");
+        -webkit-filter: blur(25px);
+    }
+    .left {
+        filter: blur(25px);
+        filter: url("blur.svg#gaussian_blur");
+        -webkit-filter: blur(25px);
+    }
+    .right {
+        filter: blur(25px);
+        filter: url("blur.svg#gaussian_blur");
+        -webkit-filter: blur(25px);
+    }
+    .bottom {
+        filter: blur(25px);
+        filter: url("blur.svg#gaussian_blur");
+        -webkit-filter: blur(25px);
+    }
+    #info {
+        display: block;
+   }
+}
